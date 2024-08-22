@@ -8,6 +8,8 @@
 ![Static Badge](https://img.shields.io/badge/-jupyter-black?logo=jupyter)
 ![Static Badge](https://img.shields.io/badge/-pycharm-black?logo=pycharm)
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
+
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
