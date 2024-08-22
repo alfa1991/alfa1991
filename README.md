@@ -5,6 +5,7 @@
 </div>
 
 ![Static Badge](https://img.shields.io/badge/py-python-blue?logo=python)
+![Static Badge](https://img.shields.io/badge/-jupyter-black?logo=jupyter)
 
 
 - 🔭 I’m currently working on ...
