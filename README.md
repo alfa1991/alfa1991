@@ -6,6 +6,7 @@
 
 ![Static Badge](https://img.shields.io/badge/py-python-blue?logo=python)
 ![Static Badge](https://img.shields.io/badge/-jupyter-black?logo=jupyter)
+![Static Badge](https://img.shields.io/badge/-pycharm-black?logo=pycharm)
 
 
 - 🔭 I’m currently working on ...
