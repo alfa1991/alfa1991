@@ -1,9 +1,8 @@
 # database.py
 
-from flask import Flask
-from models import db
+from flask_sqlalchemy import SQLAlchemy
 
-def init_db(app: Flask):
-    with app.app_context():
-        db.init_app(app)
-        db.create_all()  # Создаем все таблицы из моделей
+db = SQLAlchemy()
+
+def init_db():
+    db.create_all()

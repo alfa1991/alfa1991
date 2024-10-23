@@ -31,6 +31,9 @@ GET /items/
 GET /items/{item_id} 
 
 flask_app
+# Для инициализации базы данных
+python init_db.py
+# Для запуска приложения
 python app.py
 flask run --reload
 http://127.0.0.1:5000/users/
