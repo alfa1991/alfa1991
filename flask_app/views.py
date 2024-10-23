@@ -1,12 +1,12 @@
 from flask import Blueprint, jsonify, request
-from .models import db, User
+from models import db, User
 
 users_blueprint = Blueprint('users', __name__)
 
 # Создание базы данных
-@users_blueprint.before_first_request
-def create_tables():
-    db.create_all()
+@users_blueprint.before_app_request
+def before_request():
+    print("Это выполняется перед каждым запросом к приложению.")
 
 # Получение списка пользователей
 @users_blueprint.route('/users/', methods=['GET'])

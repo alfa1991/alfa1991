@@ -27,9 +27,14 @@ http://127.0.0.1:8000/items/
 http://127.0.0.1:8000/items/1
 http://127.0.0.1:8000/docs
 http://127.0.0.1:8000/redoc
-
 GET /items/
 GET /items/{item_id} 
+
+flask_app
+python app.py
+http://127.0.0.1:5000/users/
+http://127.0.0.1:5000/users/1
+
 
 ### Файловая структура
  

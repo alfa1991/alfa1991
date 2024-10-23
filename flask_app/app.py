@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from .views import users_blueprint  # Импорт маршрутов из views
+from views import users_blueprint  # Импорт маршрутов из views
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'  # Настройка базы данных
