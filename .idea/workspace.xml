@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="351adf9b-7a41-431c-a3b4-4c22cedad768" name="Changes" comment="1.03">
+    <list default="true" id="351adf9b-7a41-431c-a3b4-4c22cedad768" name="Changes" comment="1.04 Stable flask">
+      <change afterPath="$PROJECT_DIR$/flask_app/instance/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_app/instance/initiate.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/simple_app.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -34,23 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ilgiz Agliullin/PycharmProjects/Graduate_work/drf_app/object_detection&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.app.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.manage.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Ilgiz Agliullin/PycharmProjects/Graduate_work/drf_app/object_detection",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app\object_detection" />
@@ -78,7 +84,7 @@
       <updated>1729367924288</updated>
       <workItem from="1729447366627" duration="6967000" />
       <workItem from="1729625577923" duration="11429000" />
-      <workItem from="1729708224742" duration="1227000" />
+      <workItem from="1729708224742" duration="1858000" />
     </task>
     <task id="LOCAL-00001" summary="1.01">
       <option name="closed" value="true" />
@@ -120,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729709393469</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1.04 Stable flask">
+      <option name="closed" value="true" />
+      <created>1729709585569</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729709585569</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +156,8 @@
     <MESSAGE value="1.01" />
     <MESSAGE value="1.02" />
     <MESSAGE value="1.03" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.03" />
+    <MESSAGE value="1.04 Stable flask" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.04 Stable flask" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Graduate_work$app.coverage" NAME="app Coverage Results" MODIFIED="1729451403960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_app" />
