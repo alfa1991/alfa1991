@@ -1,33 +1,19 @@
-# views.py
-
-from flask import Flask, request, jsonify
-from models import db, User
+from flask import render_template, request, redirect, url_for
 from app import app
-from flask import render_template, Flask
+from models import User, db
 
-app = Flask(__name__)
+@app.route('/register_user', methods=['GET', 'POST'])  # Изменено имя маршрута
+def register_user():
+    if request.method == 'POST':
+        username = request.form['username']
+        email = request.form['email']
+        new_user = User(username=username, email=email)
+        db.session.add(new_user)
+        db.session.commit()
+        return redirect(url_for('home'))  # Перенаправление на главную страницу
+    return render_template('register.html')  # Отображаем страницу регистрации
 
-@app.route('/add_user', methods=['POST'])
-def add_user():
-    username = request.json.get('username')
-    email = request.json.get('email')
-
-    new_user = User(username=username, email=email)
-    db.session.add(new_user)
-    db.session.commit()
-
-    return jsonify({"message": "User added"}), 201
-
-@app.route('/users', methods=['GET'])
-def get_users():
-    users = User.query.all()
-    return jsonify([{"id": user.id, "username": user.username, "email": user.email} for user in users]), 200
-
-@app.route('/')
-def home():
-    return render_template('index.html')  # Страница по умолчанию
-
-@app.route('/users/')
+@app.route('/users')
 def users():
-    users = User.query.all()  # Получаем всех пользователей из базы данных
-    return render_template('users.html', users=users)  # Передаем пользователей в шаблон
+    users = User.query.all()
+    return render_template('users.html', users=users)

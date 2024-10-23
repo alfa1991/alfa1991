@@ -43,37 +43,36 @@ http://127.0.0.1:5000/users/1
 ### Файловая структура
  
 
-project_root/
-│   README.md
-│   requirements.txt
-│
-├───drf_app/
-│   ├───detection_site
-│   │   ├───asgi.py
-│   │   ├───settings.py
-│   │   ├───urls.py
-│   │   ├───wsgi.py
-│   │   └───__init__.py
-│   └───object_detection
-│       ├───admin.py
-│       ├───apps.py
-│       ├───models.py
-│       └───views.py
-│
-├───fastapi_app/
-│   ├───main.py
-│   ├───models.py
-│   └───views.py
-│
-├───flask_app/
-│   app.py
-│   models.py
-│   database.py
-│   config.py
-└───templates/
-    └───users.html
-└───media/
-    └───images/
+Graduate_work/
+├── README.md
+├── requirements.txt
+├── drf_app/
+│   ├── detection_site/
+│   │   ├── asgi.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   ├── wsgi.py
+│   │   └── __init__.py
+│   ├── object_detection/
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── models.py
+│   │   └── views.py
+├── fastapi_app/
+│   ├── main.py
+│   ├── models.py
+│   └── views.py
+├── flask_app/
+│   ├── app.py
+│   ├── models.py
+│   ├── views.py
+│   └── templates/  
+│       ├── index.html
+│       ├── register.html
+│       └── users.html
+└── media/
+    └── images/
+
 
 
 ## Установка и запуск
