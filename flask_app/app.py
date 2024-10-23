@@ -10,3 +10,6 @@ db = SQLAlchemy(app)
 
 # Подключение маршрутов
 app.register_blueprint(users_blueprint)
+
+if __name__ == "__main__":
+    app.run(debug=True)
