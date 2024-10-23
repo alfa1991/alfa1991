@@ -3,10 +3,10 @@ from models import db, User
 
 users_blueprint = Blueprint('users', __name__)
 
-# Создание базы данных
-@users_blueprint.before_app_request
-def before_request():
-    print("Это выполняется перед каждым запросом к приложению.")
+# Создание базы данных (выполняется только при первом запросе)
+@users_blueprint.before_app_first_request
+def before_first_request():
+    print("Это выполняется перед первым запросом к приложению.")
 
 # Получение списка пользователей
 @users_blueprint.route('/users/', methods=['GET'])
