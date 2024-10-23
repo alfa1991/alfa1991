@@ -7,5 +7,6 @@ app = FastAPI()
 
 app.include_router(item_router)
 
-# Запустите приложение, используя uvicorn:
+
+# Запуск приложения, используя uvicorn:
 # uvicorn main:app --reload
