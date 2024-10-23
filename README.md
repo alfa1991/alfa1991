@@ -32,6 +32,7 @@ GET /items/{item_id}
 
 flask_app
 python app.py
+flask run --reload
 http://127.0.0.1:5000/users/
 http://127.0.0.1:5000/users/1
 
@@ -62,9 +63,12 @@ project_root/
 │   └───views.py
 │
 ├───flask_app/
-│   ├───app.py
-│   ├───models.py
-│   └───views.py
+│   app.py
+│   models.py
+│   database.py
+│   config.py
+└───templates/
+    └───users.html
 └───media/
     └───images/
 

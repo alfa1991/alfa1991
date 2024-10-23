@@ -1,28 +1,32 @@
+# app.py
+
 from flask import Flask, render_template
-from flask_sqlalchemy import SQLAlchemy
+from config import Config
+from models import db, User
+from database import init_db
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///initiate.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config.from_object(Config)
 
-db = SQLAlchemy(app)
+# Инициализация базы данных
+init_db(app)
 
-class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(80), unique=True, nullable=False)
-    age = db.Column(db.Integer)
+@app.route('/')
+def index():
+    return "Welcome to the Flask app!"
 
 @app.route('/users/')
 def get_users():
     users = User.query.all()
     return render_template('users.html', users=users)
 
-@app.route('/users/<int:user_id>')
-def get_user(user_id):
-    user = User.query.get(user_id)
-    return render_template('user.html', user=user)
+@app.route('/add_user/<username>/<int:age>/')
+def add_user(username, age):
+    new_user = User(username=username, age=age)
+    db.session.add(new_user)
+    db.session.commit()
+    return f'Added user {username}!'
+
 
 if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()  # Создание таблиц, если их еще нет
     app.run(debug=True)
