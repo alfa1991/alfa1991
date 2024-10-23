@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список предметов</title>
+</head>
+<body>
+    <h1>Список предметов</h1>
+    <ul>
+        {% for item in object_list %}
+            <li>{{ item.name }}</li>  <!-- Предполагается, что у модели Item есть поле name -->
+        {% endfor %}
+    </ul>
+</body>
+</html>
