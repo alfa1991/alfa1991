@@ -36,6 +36,7 @@ python init_db.py
 # Для запуска приложения
 python app.py
 flask run --reload
+http://127.0.0.1:5000/register
 http://127.0.0.1:5000/users/
 http://127.0.0.1:5000/users/1
 
