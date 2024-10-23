@@ -11,5 +11,10 @@ db = SQLAlchemy(app)
 # Подключение маршрутов
 app.register_blueprint(users_blueprint)
 
-if __name__ == "__main__":
+# Создание всех таблиц базы данных при запуске приложения
+@app.before_request
+def create_tables():
+    db.create_all()  # Создание таблиц, если они не существуют
+
+if __name__ == '__main__':
     app.run(debug=True)
