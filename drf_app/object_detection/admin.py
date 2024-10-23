@@ -3,4 +3,4 @@ from .models import Item
 
 @admin.register(Item)
 class ItemAdmin(admin.ModelAdmin):
-    list_display = ('name', 'description', 'image')
+    list_display = ('name', 'description')  # Поля, которые будут отображаться в админке

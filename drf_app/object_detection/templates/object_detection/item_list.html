@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Список предметов</title>
 </head>
 <body>
     <h1>Список предметов</h1>
     <ul>
-        {% for item in object_list %}
-            <li>{{ item.name }}</li>  <!-- Предполагается, что у модели Item есть поле name -->
+        {% for item in items %}
+            <li>{{ item.name }}: {{ item.description }}</li>
+        {% empty %}
+            <li>Нет предметов для отображения.</li>
         {% endfor %}
     </ul>
 </body>
