@@ -1,16 +1,15 @@
-#settings.py
-
 import os
 from pathlib import Path
+from decouple import config
 
 # Путь к корневому каталогу проекта
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Безопасный ключ для Django
-SECRET_KEY = 'your-secret-key'
+SECRET_KEY = config('SECRET_KEY', default='your-secret-key')
 
 # Режим отладки
-DEBUG = True
+DEBUG = config('DEBUG', default=True, cast=bool)
 
 # Разрешенные хосты
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
@@ -23,8 +22,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',  # Django Rest Framework
-    'object_detection',  # Ваше приложение
+    'rest_framework',
+    'object_detection',
 ]
 
 # Middleware
@@ -46,7 +45,7 @@ ROOT_URLCONF = 'detection_site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -66,7 +65,7 @@ WSGI_APPLICATION = 'detection_site.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',  # SQLite файл базы данных
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -113,10 +112,9 @@ USE_TZ = True
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_URL = '/static/'
 
-
 # Медиа-файлы (для загрузки изображений)
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Директория для хранения загруженных файлов
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Укажите разрешенные источники

@@ -16,6 +16,8 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 python manage.py createsuperuser
+python manage.py test object_detection
+
 http://127.0.0.1:8000/admin/
 http://127.0.0.1:8000/items/
 http://127.0.0.1:8000/api/items/
