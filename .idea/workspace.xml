@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="351adf9b-7a41-431c-a3b4-4c22cedad768" name="Changes" comment="1.10">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drf_app/object_detection/signals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drf_app/object_detection/templates/object_detection/home.html" afterDir="false" />
+    <list default="true" id="351adf9b-7a41-431c-a3b4-4c22cedad768" name="Changes" comment="1.11 Stable Django">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drf_app/detection_site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/detection_site/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drf_app/detection_site/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/detection_site/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drf_app/detection_site/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/detection_site/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drf_app/object_detection/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drf_app/object_detection/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/views.py" afterDir="false" />
     </list>
@@ -29,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -71,11 +61,11 @@
       <recent name="C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app\object_detection" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app" />
+      <recent name="C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work" />
       <recent name="C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app\media" />
       <recent name="C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\media" />
       <recent name="C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app\media\images" />
-      <recent name="C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\flask_app" />
-      <recent name="C:\Users\Ilgiz Agliullin\PycharmProjects\Graduate_work\drf_app" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -97,7 +87,8 @@
       <workItem from="1729447366627" duration="6967000" />
       <workItem from="1729625577923" duration="11429000" />
       <workItem from="1729708224742" duration="10171000" />
-      <workItem from="1729718556036" duration="11285000" />
+      <workItem from="1729718556036" duration="13078000" />
+      <workItem from="1729878521301" duration="2836000" />
     </task>
     <task id="LOCAL-00001" summary="1.01">
       <option name="closed" value="true" />
@@ -219,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729718524125</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="1.11 table Django">
+      <option name="closed" value="true" />
+      <created>1729876796358</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1729876796358</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +259,8 @@
     <MESSAGE value="1.08 Stable Flask" />
     <MESSAGE value="1.09 Stable Flask register" />
     <MESSAGE value="1.10" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.10" />
+    <MESSAGE value="1.11 table Django" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.11 table Django" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Graduate_work$app.coverage" NAME="app Coverage Results" MODIFIED="1729451403960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_app" />

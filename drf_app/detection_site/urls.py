@@ -7,5 +7,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),  # URL для административной панели
-    path('api/', include('object_detection.urls')),  # Включение URL для приложения object_detection
+    path('', include('object_detection.urls')),  # Включение URL для приложения object_detection
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

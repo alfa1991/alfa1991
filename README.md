@@ -47,20 +47,36 @@ http://127.0.0.1:5000/users/1
  
 
 Graduate_work/
-├── README.md
-├── requirements.txt
+├── .venv/
 ├── drf_app/
 │   ├── detection_site/
+│   │   ├── __init__.py
 │   │   ├── asgi.py
 │   │   ├── settings.py
 │   │   ├── urls.py
-│   │   ├── wsgi.py
-│   │   └── __init__.py
+│   │   └── wsgi.py
+│   ├── media/
 │   ├── object_detection/
+│   │   ├── migrations/
+│   │   │   ├── 0001_initial.py
+│   │   │   ├── 0002_remove_item_image_alter_item_name.py
+│   │   │   └── __init__.py
+│   │   ├── templates/
+│   │   │   └── object_detection/
+│   │   │       ├── home.html
+│   │   │       └── item_list.html
+│   │   ├── __init__.py
 │   │   ├── admin.py
 │   │   ├── apps.py
 │   │   ├── models.py
+│   │   ├── serializers.py
+│   │   ├── signals.py
+│   │   ├── tests.py
+│   │   ├── urls.py
 │   │   └── views.py
+├── static/
+├── db.sqlite3
+└── manage.py
 ├── fastapi_app/
 │   ├── main.py
 │   ├── models.py
