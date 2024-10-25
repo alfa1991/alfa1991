@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="351adf9b-7a41-431c-a3b4-4c22cedad768" name="Changes" comment="1.11 Stable Django">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drf_app/detection_site/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/detection_site/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="351adf9b-7a41-431c-a3b4-4c22cedad768" name="Changes" comment="1.11 Stable Django" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +20,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
