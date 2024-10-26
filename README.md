@@ -19,6 +19,8 @@ python manage.py createsuperuser
 python manage.py test object_detection
 python manage.py runserver   
 python manage.py runserver 8080
+python manage.py showmigrations
+
 
 http://127.0.0.1:8080/admin/
 http://127.0.0.1:8080/items/
