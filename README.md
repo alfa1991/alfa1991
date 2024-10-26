@@ -50,51 +50,59 @@ http://127.0.0.1:5000/users/1
 ### Файловая структура
  
 
-Graduate_work/
-├── .venv/
-├── drf_app/
-│   ├── detection_site/
-│   │   ├── __init__.py
-│   │   ├── asgi.py
-│   │   ├── settings.py
-│   │   ├── urls.py
-│   │   └── wsgi.py
-│   ├── media/
-│   ├── object_detection/
-│   │   ├── migrations/
-│   │   │   ├── 0001_initial.py
-│   │   │   ├── 0002_remove_item_image_alter_item_name.py
+# Структура проекта
+
+```plaintext
+Выпускная работа/
+├── .venv/                       # Виртуальное окружение для изоляции зависимостей
+├── db.sqlite3                   # Файл базы данных SQLite
+├── manage.py                    # Скрипт для управления Django-приложением
+
+├── drf_app/                     # Основное Django-приложение
+│   ├── detection_site/          # Директория конфигурации Django-приложения
+│   │   ├── __init__.py          # Указывает на то, что это пакет Python
+│   │   ├── asgi.py              # Точка входа для ASGI-серверов
+│   │   ├── settings.py          # Основные настройки Django
+│   │   ├── urls.py              # Маршрутизация URL для приложения
+│   │   └── wsgi.py              # Точка входа для WSGI-серверов
+│   ├── media/                   # Директория для хранения медиафайлов
+│   ├── object_detection/        # Приложение для объектного распознавания
+│   │   ├── миграции/            # Файлы миграций базы данных
+│   │   │   ├── 0001_initial.py  # Первая миграция
+│   │   │   ├── 0002_remove_item_image_alter_item_name.py  # Вторая миграция
 │   │   │   └── __init__.py
-│   │   ├── templates/
-│   │   │   └── object_detection/
-│   │   │       ├── home.html
-│   │   │       └── item_list.html
+│   │   ├── шаблоны/             # Шаблоны HTML для Django-приложения
+│   │   │   └── объектное распознавание/
+│   │   │       ├── home.html             # Главная страница
+│   │   │       └── список_элементов.html # Страница со списком элементов
 │   │   ├── __init__.py
-│   │   ├── admin.py
-│   │   ├── apps.py
-│   │   ├── models.py
-│   │   ├── serializers.py
-│   │   ├── signals.py
-│   │   ├── tests.py
-│   │   ├── urls.py
-│   │   └── views.py
-├── static/
-├── db.sqlite3
-└── manage.py
-├── fastapi_app/
-│   ├── main.py
-│   ├── models.py
-│   └── views.py
-├── flask_app/
-│   ├── app.py
-│   ├── models.py
-│   ├── views.py
-│   └── templates/  
-│       ├── index.html
-│       ├── register.html
-│       └── users.html
-└── media/
-    └── images/
+│   │   ├── admin.py             # Настройки административного интерфейса
+│   │   ├── apps.py              # Конфигурация приложения
+│   │   ├── models.py            # Определение моделей данных
+│   │   ├── serializers.py       # Сериализация и десериализация данных
+│   │   ├── signals.py           # Сигналы для обработки событий
+│   │   ├── tests.py             # Тесты для приложения
+│   │   ├── urls.py              # Маршруты для объектного распознавания
+│   │   └── views.py             # Логика представлений для обработки запросов
+
+├── static/                      # Директория для статических файлов Django
+
+├── fastapi_app/                 # Приложение на FastAPI
+│   ├── main.py                  # Основной файл для запуска приложения FastAPI
+│   ├── models.py                # Модели данных FastAPI
+│   └── views.py                 # Обработчики маршрутов FastAPI
+
+├── flask_app/                   # Приложение на Flask
+│   ├── app.py                   # Основной файл для запуска приложения Flask
+│   ├── models.py                # Модели данных для Flask
+│   ├── views.py                 # Обработчики маршрутов Flask
+│   └── templates/               # Шаблоны HTML для Flask
+│       ├── index.html           # Главная страница
+│       ├── register.html        # Страница регистрации
+│       └── users.html           # Страница пользователей
+
+└── media/                       # Директория для хранения медиафайлов
+    └── images/                  # Директория для хранения изображений
 
 
 
