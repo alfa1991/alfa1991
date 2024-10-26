@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="351adf9b-7a41-431c-a3b4-4c22cedad768" name="Changes" comment="1.12 Stable Django admin panel">
-      <change afterPath="$PROJECT_DIR$/drf_app/media/item_images/pexels-ash-craig-122861-376464.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drf_app/media/item_images/pexels-dana-tentis-118658-262959.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drf_app/media/item_images/pexels-heftiba-940302.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drf_app/media/item_images/pexels-monicore-1391487.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drf_app/object_detection/management/commands/create_initial_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drf_app/object_detection/migrations/0003_item_category_item_created_at_item_image_and_more.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project_root.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project_root.iml" afterDir="false" />
+    <list default="true" id="351adf9b-7a41-431c-a3b4-4c22cedad768" name="Changes" comment="1.13 Stable Django admin panel, menu adding items">
+      <change afterPath="$PROJECT_DIR$/drf_app/media/item_images/pexels-valeriya-1199957.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/templates/object_detection/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/templates/object_detection/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drf_app/object_detection/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/drf_app/object_detection/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729963734393</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="1.13 Stable Django admin panel, menu adding items">
+      <option name="closed" value="true" />
+      <created>1729965804748</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1729965804748</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +306,8 @@
     <MESSAGE value="1.11 table Django" />
     <MESSAGE value="1.11 Stable Django" />
     <MESSAGE value="1.12 Stable Django admin panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.12 Stable Django admin panel" />
+    <MESSAGE value="1.13 Stable Django admin panel, menu adding items" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.13 Stable Django admin panel, menu adding items" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Graduate_work$app.coverage" NAME="app Coverage Results" MODIFIED="1729451403960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_app" />

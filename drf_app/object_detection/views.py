@@ -7,14 +7,16 @@ from .serializers import ItemSerializer  # Импортируйте сериал
 from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework.routers import DefaultRouter
-from django.http import HttpResponse
 from django.urls import path, include  # Импортируйте path и include
 
-def index(request):
-    return HttpResponse("Hello, world!")  # Простая проверка
+# def index(request):
+#     return HttpResponse("Hello, world!")  # Простая проверка
 
 def home(request):
-    return render(request, 'object_detection/home.html')  # Отображение главной страницы
+    return render(request, 'object_detection/home.html')  # Отображает шаблон home.html
+
+def index(request):
+    return render(request, 'object_detection/home.html')  # Здесь указываем, что отображается home.html
 
 @api_view(['GET'])
 def item_list_api(request):
