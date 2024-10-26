@@ -20,9 +20,9 @@ python manage.py test object_detection
 python manage.py runserver   
 python manage.py runserver 8080
 
-http://127.0.0.1:8000/admin/
-http://127.0.0.1:8000/items/
-http://127.0.0.1:8000/api/items/
+http://127.0.0.1:8080/admin/
+http://127.0.0.1:8080/items/
+http://127.0.0.1:8080/api/items/
 
 Fastapi
 uvicorn main:app --reload
