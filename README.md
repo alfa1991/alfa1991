@@ -17,6 +17,7 @@ python manage.py migrate
 python manage.py runserver
 python manage.py createsuperuser
 python manage.py test object_detection
+python manage.py runserver   
 python manage.py runserver 8080
 
 http://127.0.0.1:8000/admin/
